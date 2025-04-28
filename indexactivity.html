@@ -37,6 +37,14 @@
             document.write("<br><br>Discount: " + discount);
             document.write("<br><br>Discount Applied: " + p_total);
         }
+
+        // Student discount MOUSE
+        if (student) {
+            let studentDiscount = p_mouse * 0.05;
+            p_total -= studentDiscount;
+            document.write("<br><br>Student Discount: " + studentDiscount);
+            document.write("<br><br>Total After Student Discount: " + p_total);
+        }
     } 
 
     //Keyboard
@@ -49,6 +57,14 @@
             p_total -= discount;
             document.write("<br><br>Discount: " + discount);
             document.write("<br><br>Discount Applied: " + p_total);
+        }
+
+        // Student discount KEYBOARD
+        if (student) {
+            let studentDiscount = p_keyboard * 0.05;
+            p_total -= studentDiscount;
+            document.write("<br><br>Student Discount: " + studentDiscount);
+            document.write("<br><br>Total After Student Discount: " + p_total);
         }
     } 
 
@@ -63,6 +79,14 @@
             document.write("<br><br>Discount: " + discount);
             document.write("<br><br>Discount Applied: " + p_total);
         }
+
+        // Student discount MONITOR
+        if (student) {
+            let studentDiscount = p_monitor * 0.05;
+            p_total -= studentDiscount;
+            document.write("<br><br>Student Discount: " + studentDiscount);
+            document.write("<br><br>Total After Student Discount: " + p_total);
+        }
     } 
 
     //Motherboard
@@ -75,6 +99,14 @@
             p_total -= discount;
             document.write("<br><br>Discount: " + discount);
             document.write("<br><br>Discount Applied: " + p_total);
+        }
+
+        // Student discount MOTHERBOARD
+        if (student) {
+            let studentDiscount = p_motherboard * 0.05;
+            p_total -= studentDiscount;
+            document.write("<br><br>Student Discount: " + studentDiscount);
+            document.write("<br><br>Total After Student Discount: " + p_total);
         }
     } 
 
@@ -89,6 +121,14 @@
             document.write("<br><br>Discount: " + discount);
             document.write("<br><br>Discount Applied: " + p_total);
         }
+
+        // Student discount HARDDRIVE
+        if (student) {
+            let studentDiscount = p_harddrive * 0.05;
+            p_total -= studentDiscount;
+            document.write("<br><br>Student Discount: " + studentDiscount);
+            document.write("<br><br>Total After Student Discount: " + p_total);
+        }
     } 
 
     //Table
@@ -102,19 +142,19 @@
             document.write("<br><br>Discount: " + discount);
             document.write("<br><br>Discount Applied: " + p_total);
         }
+
+        // Student discount TABLE
+        if (student) {
+            let studentDiscount = p_table * 0.05;
+            p_total -= studentDiscount;
+            document.write("<br><br>Student Discount: " + studentDiscount);
+            document.write("<br><br>Total After Student Discount: " + p_total);
+        }
     } 
 
     //Invalid product
     else {
         alert("Invalid product name.");
-    }
-
-    // Student discount
-    if (student) {
-        let studentDiscount = p_total * 0.05;
-        p_total -= studentDiscount;
-        document.write("<br><br>Student Discount: " + studentDiscount);
-        document.write("<br><br>Total After Student Discount: " + p_total);
     }
 
     // Tax if total price exceeds 5000
